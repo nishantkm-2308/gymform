@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first gym site</title>
+    <!-- <link rel="stylesheet" href="gym.css"> -->
+    <style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(https://wallpapercave.com/wp/wp9397099.jpg);
+        background-size: cover;
+        background-repeat: no repeat;
+    
+    }
+    
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    
+    .mid {
+        border: 5px solid rgb(255, 69, 23);
+        border-radius: 93px;
+        padding-left: 20px;
+        display: block;
+        width: 45%;
+        margin: 20px auto;
+       
+       
+    }
+    
+    .right {
+       
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        margin-right: 25px;
+    }
+    
+    .navbar {
+        display: inline-block;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        /* column-rule: white; */
+        font-size: 23px;
+    }
+    
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+        font-style: italic;
+    }
+    
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(245, 76, 61);
+    
+    }
+    
+    .left img {
+    
+        border-radius: 30px;
+        top: -28px;
+        left: -34px;
+        position: absolute;
+        width: 63px;
+    
+    }
+        h2:hover{
+            color: red;
+        }
+    h4 {
+        
+        width: 90px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        left: -36px;
+    
+    }
+    h4:hover{
+        color: red;
+    }
+    
+    .btn {
+        color: white;
+        background-color: black;
+        padding: 7px 7px;
+        border: 2px solid darkgrey;
+        border-radius: 8px;
+        font-size: 19px;
+    }
+    
+    .btn:hover {
+        color: rgb(252, 18, 18);
+        
+        cursor: pointer;
+    }
+    
+    #btn1 {
+        margin-right: 35px;
+    }
+    
+    #btn2 {
+        margin-right: 25px;
+    }
+    
+    .container {
+       
+        font-size: 20px;
+    
+        position: absolute;
+        margin: left;
+        left: 200px;
+        top: 120px;
+        
+    margin-left: 380px;
+        
+    }
+    
+    .inbox {
+        font-size: 30px;
+        border-radius: 15px;
+        /* border: 4px rgb(70, 67, 67); */
+        font-style: italic;
+    }
+    .inbox:hover{
+        border: 3px solid rgb(248, 53, 53);
+    }
+    
+    .label {
+        font-size: 30px;
+    }
+    .pt{
+    font-size: 30px;
+    }
+    .gender{
+    font-size: 30px;
+    }
+    .btns{
+    font-size: 20px;
+    
+        position: absolute;
+        margin: left;
+        left: 220px;
+        top: 620px;
+        
+    margin-left: 550px;
+    }
+    #btnsr{
+    position: absolute; left: 190px;
+    }
+    #btnss{
+    position: absolute; left: 60px;
+    }
+    .btns:hover{
+    background-color: black;
+    color: rgb(242, 45, 45);
+    }
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <div class="left">
+                <img src="https://images-platform.99static.com/8QVhsq0xUI9KAGH6WZXUmnWohwI=/0x0:1574x1574/500x500/top/smart/99designs-contests-attachments/97/97489/attachment_97489210"
+                    alt="">
+                <h4>NK GYM</h4>
+            </div>
+
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Other services</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn" id="btn1">call us</button>
+            <button class="btn" id="btn2">email us</button>
+        </div>
+    </header>
+    <form action="backend.php">
+    <div class="container">
+        <!-- <label for="name" class="label">Name:</label> -->
+        <div>
+            <input type="text" name="myname" id="name" class="inbox" placeholder="enter your name">
+        </div>
+        <br>
+        <!-- <label for="mobile" class="label">Mobile:</label> -->
+        <div>
+            <input type="number" name="mymobile" id="mobile" class="inbox" placeholder="enter your mobile no.">
+        </div>
+        <br>
+        <!-- <label for="address" class="label">Address:</label> -->
+        <div>
+            <input type="text" name="myadd" id="address" class="inbox" placeholder="enter your address">
+        </div>
+        <br>
+        <!-- <label for="email" class="label">Email id:</label> -->
+        <div>
+            <input type="email" name="myemail" id="email" class="inbox" placeholder="enter your email id">
+        </div>
+        <br>
+        <!-- <label for="age" class="label">Age:</label> -->
+        <div>
+            <input type="number" name="age" id="age" class="inbox" placeholder="enter your age">
+        </div>
+        <br>
+        <label for="gender" class="label">Gender:</label>
+        <div class="gender">
+            Male:<input type="radio" name="mygender" id="gender" >&nbsp; Female:<input type="radio"
+                name="mygender" id="gender" >
+        </div>
+        <br>
+
+        <!-- <div class="pt">
+            Personal trainer:<input type="checkbox" name="pt" id="personal trainer">
+        </div> -->
+       <h2>our fee is RS2,000/month</h2>
+      
+    </div>
+    <input type="submit" name="submit" class="btns" id="btnss">
+    <input type="reset" name="reset" class="btns" id="btnsr"> 
+</form>
+</body>
+
+</html>
